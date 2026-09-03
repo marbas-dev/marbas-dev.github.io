@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spanwise — Gizlilik Politikası</title>
+<style>
+:root { color-scheme: light dark; }
+body { font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+       max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+h1 { font-size: 1.7rem; margin-bottom: .25rem; }
+h2 { font-size: 1.15rem; margin-top: 2rem; }
+.sub { color: #888; margin-top: 0; }
+.lang { text-align: right; margin: 0 0 1rem; font-size: .9rem; }
+.lead { font-size: 1.1rem; font-weight: 600; }
+hr { border: none; border-top: 1px solid #8883; margin: 2.5rem 0; }
+code { font-size: .95em; }
+</style>
+</head>
+<body>
+
+<!-- Turkish first, English below. App Review opens this URL and reads English;
+     the jump link saves them a scroll and saves us a "policy unclear" note. -->
+<p class="lang"><a href="#en">English ↓</a></p>
+
+<h1>Spanwise — Gizlilik Politikası</h1>
+<p class="sub">Son güncelleme: 3 Eylül 2026</p>
+
+<p class="lead">Spanwise hakkınızda hiçbir veri toplamaz. Bizim bir sunucumuz yok.</p>
+
+<p>Bu politikanın anlatacak bir şeyi var, çünkü Spanwise senkron yapabiliyor — ve
+senkron yapan bir uygulamanın "hiçbir şey toplamıyoruz" demesi, nereye gittiğini
+açıklamadıkça yeterli değil. Kısaca: verileriniz <strong>sizin</strong> iCloud
+hesabınıza gider, bizim bir yerimize değil.</p>
+
+<h2>Toplanmayan veriler</h2>
+<p>Uygulama ad, e-posta, konum, rehber, fotoğraf, sağlık verisi, reklam kimliği
+(IDFA), cihaz kimliği veya kullanım analitiği <strong>toplamaz</strong>. Hesap
+oluşturmanız istenmez, çünkü hesap yoktur. Uygulamada hiçbir üçüncü taraf
+yazılım geliştirme kiti bulunmaz — ne analitik, ne reklam, ne çökme raporlama.</p>
+
+<h2>Cihazınızda kalanlar</h2>
+<p>Alışkanlıklarınız, hedefleriniz ve işaretlediğiniz günler cihazınızda saklanır.
+Uygulamayı silerseniz bu veriler cihazınızdan silinir.</p>
+
+<h2>Senkron satın alırsanız</h2>
+<p>Senkron, Spanwise'ın ücretli özelliğidir. Açtığınızda alışkanlık verileriniz
+<strong>sizin kendi iCloud hesabınızın özel veritabanına</strong> yazılır — Apple'ın
+CloudKit altyapısı üzerinden, yalnızca sizin cihazlarınızın erişebildiği alana.</p>
+
+<p>Bu verilere <strong>bizim erişimimiz yoktur.</strong> Kendi sunucumuz yoktur;
+verilerinizin geçtiği bir sistemimiz yoktur.</p>
+
+<p>Ayrıca içerik alanları <strong>uçtan uca şifrelenir</strong> (CloudKit'in
+<code>encryptedValues</code> mekanizması). Hangi alışkanlığı hangi gün
+işaretlediğiniz, ne sıklıkla yaptığınız, ne zaman bıraktığınız — bunların hiçbiri
+sunucu tarafında okunabilir değildir. Apple da dahil.</p>
+
+<h2>Şifrelenmeyen ne var</h2>
+<p>Bir gizlilik iddiası ancak kenarlarını da söylerse güvenilirdir. CloudKit üç
+şeyi hiçbir zaman şifrelemez, ve bunlar bizim seçimimiz değil altyapının yapısıdır:</p>
+<ul>
+<li>Kayıtların <em>şema sürüm numarası</em> — hangi uygulama sürümünün yazdığını
+söyleyen bir tam sayı. Sizin hakkınızda hiçbir şey söylemez.</li>
+<li>Alışkanlık <em>tanım</em> kayıtlarının adı: rastgele bir kimlik ve bir zaman
+damgası taşır. Yani bir alışkanlığın var olduğu ve kabaca ne zaman düzenlendiği
+görülebilir — adı, hedefi veya hangi gün işaretlendiği görülemez. İşaretleme
+kayıtlarının adları tamamen rastgeledir ve hiçbir şey sızdırmaz.</li>
+<li>iCloud'un kendi yükleme zaman damgaları. CloudKit kullanan her uygulamada vardır.</li>
+</ul>
+
+<h2>Satın almalar</h2>
+<p>Ödeme tamamen Apple üzerinden yapılır. Kart bilgilerinizi görmeyiz, saklamayız,
+bize hiç ulaşmaz.</p>
+
+<h2>Verilerinizi silmek</h2>
+<p>Uygulamayı silmek cihazınızdaki verileri siler. iCloud'daki kopyayı silmek için:
+<em>Ayarlar → [adınız] → iCloud → Depolamayı Yönet → Spanwise</em>. Bu, Apple'ın
+kendi arayüzüdür; bizim onaylamamıza gerek yoktur çünkü veri zaten sizindir.</p>
+
+<h2>Çocuklar</h2>
+<p>Spanwise 4 yaş ve üzeri için derecelendirilmiştir ve hiç kimseden veri
+toplamadığı için çocuklardan da veri toplamaz.</p>
+
+<h2>Bu politika değişirse</h2>
+<p>Değişirse bu sayfadaki tarih güncellenir. Uygulamanın veri davranışı değişirse
+—örneğin bir gün şifrelenen alanlar değişirse— uygulama içindeki ilgili metin de
+onunla birlikte değişir; ikisi birbirine bağlıdır.</p>
+
+<h2>İletişim</h2>
+<p><a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a></p>
+
+<hr>
+
+<h1 id="en">Spanwise — Privacy Policy</h1>
+<p class="sub">Last updated: 3 September 2026</p>
+
+<p class="lead">Spanwise collects no data about you. We have no server.</p>
+
+<p>This policy has something to say, because Spanwise can sync — and an app that
+syncs cannot claim "we collect nothing" without saying where things go. In short:
+your data goes to <strong>your own</strong> iCloud account, not to anything of ours.</p>
+
+<h2>What is not collected</h2>
+<p>The app collects no name, email, location, contacts, photos, health data,
+advertising identifier (IDFA), device identifier, or usage analytics. You are never
+asked to create an account, because there is no account. The app contains no
+third-party SDKs of any kind — no analytics, no advertising, no crash reporting.</p>
+
+<h2>What stays on your device</h2>
+<p>Your habits, your goals, and the days you marked are stored on your device.
+Deleting the app deletes them from it.</p>
+
+<h2>If you buy sync</h2>
+<p>Sync is Spanwise's paid feature. When it is on, your habit data is written to
+<strong>the private database of your own iCloud account</strong> — through Apple's
+CloudKit, in the area only your devices can reach.</p>
+
+<p><strong>We have no access to it.</strong> We run no server of our own, and there
+is no system of ours that your data passes through.</p>
+
+<p>Content fields are also <strong>end-to-end encrypted</strong> (CloudKit's
+<code>encryptedValues</code>). Which habit you marked on which day, how often you
+kept it, when you stopped — none of that is readable server-side. Not by Apple either.</p>
+
+<h2>What is not encrypted</h2>
+<p>A privacy claim is only trustworthy if it states its edges. CloudKit never
+encrypts three things, and these are properties of the platform rather than choices
+of ours:</p>
+<ul>
+<li>A record's <em>schema version number</em> — an integer saying which build wrote
+it. It says nothing about you.</li>
+<li>The name of a habit <em>definition</em> record, which carries a random identifier
+and a timestamp. So it can be seen that a habit exists and roughly when it was
+edited — not its name, its goal, or any day it was marked. The names of marking
+records are entirely random and leak nothing.</li>
+<li>iCloud's own upload timestamps. Every app using CloudKit has these.</li>
+</ul>
+
+<h2>Purchases</h2>
+<p>Payment is handled entirely by Apple. We do not see, store, or ever receive your
+card details.</p>
+
+<h2>Deleting your data</h2>
+<p>Deleting the app removes the data on your device. To remove the iCloud copy:
+<em>Settings → [your name] → iCloud → Manage Storage → Spanwise</em>. That is Apple's
+own interface; it needs no approval from us, because the data is already yours.</p>
+
+<h2>Children</h2>
+<p>Spanwise is rated 4+ and, since it collects data from nobody, collects none from
+children either.</p>
+
+<h2>If this policy changes</h2>
+<p>The date on this page will change with it. If the app's data behaviour changes —
+if one day the encrypted fields differ, say — the corresponding text inside the app
+changes with it; the two are tied together.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a></p>
+
+</body>
+</html>
