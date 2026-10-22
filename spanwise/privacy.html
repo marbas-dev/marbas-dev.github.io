@@ -24,158 +24,152 @@ code { font-size: .95em; }
 <p class="lang"><a href="#en">English ↓</a></p>
 
 <h1>Spanwise — Gizlilik Politikası</h1>
-<p class="sub">Son güncelleme: 6 Ekim 2026</p>
 
-<p class="lead">Spanwise hakkınızda hiçbir veri toplamaz. Bizim bir sunucumuz yok.</p>
+<p class="sub">Son güncelleme: 22 Ekim 2026</p>
 
-<p>Bu politikanın anlatacak bir şeyi var, çünkü Spanwise senkron yapabiliyor — ve
-senkron yapan bir uygulamanın "hiçbir şey toplamıyoruz" demesi, nereye gittiğini
-açıklamadıkça yeterli değil. Kısaca: verileriniz <strong>sizin</strong> iCloud
-hesabınıza gider, bizim bir yerimize değil.</p>
+<p><em>Bu politika Spanwise 2.0 ve sonrasını anlatır. 2.0'dan önceki sürümlerde üçüncü taraf kit yoktur; RevenueCat'e hiçbir şey gitmez.</em></p>
+
+<p class="lead">Spanwise yazdıklarınızdan hiçbir şey toplamaz. Bizim bir sunucumuz yok. Aboneliği RevenueCat yürütür; ona giden, satın almanın anonim bir kaydıdır.</p>
+
+<p>Bu politikanın anlatacak bir şeyi var, çünkü Spanwise eşitleme yapabiliyor — ve eşitleme yapan bir uygulamanın "hiçbir şey toplamıyoruz" demesi, verinin nereye gittiğini açıklamadıkça yeterli değil. Kısaca: verileriniz sizin iCloud hesabınıza gider, bizim bir yerimize değil.</p>
 
 <h2>Toplanmayan veriler</h2>
-<p>Uygulama ad, e-posta, konum, rehber, fotoğraf, sağlık verisi, reklam kimliği
-(IDFA), cihaz kimliği veya kullanım analitiği <strong>toplamaz</strong>. Hesap
-oluşturmanız istenmez, çünkü hesap yoktur. Uygulamada hiçbir üçüncü taraf
-yazılım geliştirme kiti bulunmaz — ne analitik, ne reklam, ne çökme raporlama.</p>
+
+<p>Uygulama ad, e-posta, konum, rehber, fotoğraf, sağlık verisi, reklam kimliği (IDFA) veya kullanım analitiği toplamaz. Bir raporu resim olarak kaydetmek yalnızca o resmi Fotoğraflar'a eklemek için izin ister; uygulama fotoğraf arşivinizi okumaz. Hesap oluşturmanız istenmez, çünkü hesap yoktur. Uygulamadaki tek üçüncü taraf yazılım geliştirme kiti RevenueCat'tir ve yalnız abonelik içindir (aşağıda, "Satın almalar"); analitik, reklam ya da çökme raporlama kiti yoktur.</p>
 
 <h2>Cihazınızda kalanlar</h2>
-<p>Alışkanlıklarınız, hedefleriniz ve işaretlediğiniz günler cihazınızda saklanır.
-Uygulamayı silerseniz bu veriler cihazınızdan silinir.</p>
 
-<h2>Senkron</h2>
-<p>Senkron fiyata dahildir. iCloud'a giriş yaptığınız cihazlarda alışkanlık verileriniz
-<strong>sizin kendi iCloud hesabınızın özel veritabanına</strong> yazılır — Apple'ın
-CloudKit altyapısı üzerinden, yalnızca sizin cihazlarınızın erişebildiği alana.
-İstemezseniz iCloud ayarlarınızdan Spanwise'ın iCloud kullanımını kapatabilirsiniz;
-uygulama cihazınızda çalışmaya devam eder.</p>
+<p>Sayfalarınız, üstlerine koyduğunuz çıkartmalar ve hazır günleriniz cihazınızda saklanır. Uygulamayı silerseniz bu veriler cihazınızdan silinir.</p>
 
-<p>Bu verilere <strong>bizim erişimimiz yoktur.</strong> Kendi sunucumuz yoktur;
-verilerinizin geçtiği bir sistemimiz yoktur.</p>
+<h2>Eşitleme</h2>
 
-<p>Ayrıca içerik alanları <strong>uçtan uca şifrelenir</strong> (CloudKit'in
-<code>encryptedValues</code> mekanizması). Hangi alışkanlığı hangi gün
-işaretlediğiniz, ne sıklıkla yaptığınız, ne zaman bıraktığınız — bunların hiçbiri
-sunucu tarafında okunabilir değildir. Apple da dahil.</p>
+<p>Eşitleme abonelik istemez ve ek ücreti yoktur. iCloud'a giriş yaptığınız cihazlarda sayfalarınız sizin kendi iCloud hesabınızın özel veritabanına yazılır — Apple'ın CloudKit altyapısı üzerinden, yalnızca sizin cihazlarınızın erişebildiği alana. İstemezseniz iCloud ayarlarınızdan Spanwise'ın iCloud kullanımını kapatabilirsiniz; uygulama cihazınızda çalışmaya devam eder.</p>
+
+<p>Bu verilere bizim erişimimiz yoktur. Kendi sunucumuz yoktur; verilerinizin geçtiği bir sistemimiz yoktur.</p>
+
+<p>Ayrıca içerik alanları gönderilmeden önce cihazınızda şifrelenir ve yalnız geri geldiklerinde cihazlarınızda çözülür (CloudKit'in <code>encryptedValues</code> mekanizması). Hangi gün hangi çıkartmayı koyduğunuz, kaç tane, ne kadar süre, sayfanın neresine — hepsi iCloud'un sunucularında şifreli durur. Anahtarları kimin tuttuğu iCloud ayarınıza bağlıdır: İleri Düzey Veri Koruması açıksa yalnız sizin cihazlarınız tutar, Apple da tutmaz; kapalıysa, iCloud verilerinin çoğunda olduğu gibi Apple tutar.</p>
 
 <h2>Şifrelenmeyen ne var</h2>
-<p>Bir gizlilik iddiası ancak kenarlarını da söylerse güvenilirdir. CloudKit üç
-şeyi hiçbir zaman şifrelemez, ve bunlar bizim seçimimiz değil altyapının yapısıdır:</p>
+
+<p>Bir gizlilik iddiası ancak kenarlarını da söylerse güvenilirdir. CloudKit birkaç şeyi hiçbir zaman şifrelemez, ve bunlar bizim seçimimiz değil altyapının yapısıdır:</p>
+
 <ul>
-<li>Kayıtların <em>şema sürüm numarası</em> — hangi uygulama sürümünün yazdığını
-söyleyen bir tam sayı. Sizin hakkınızda hiçbir şey söylemez.</li>
-<li>Alışkanlık <em>tanım</em> kayıtlarının adı: rastgele bir kimlik ve bir zaman
-damgası taşır. Yani bir alışkanlığın var olduğu ve kabaca ne zaman düzenlendiği
-görülebilir — adı, hedefi veya hangi gün işaretlendiği görülemez. İşaretleme
-kayıtlarının adları tamamen rastgeledir ve hiçbir şey sızdırmaz.</li>
+<li>Kayıtların şema sürüm numarası — hangi uygulama sürümünün yazdığını söyleyen bir tam sayı. Sizin hakkınızda hiçbir şey söylemez.</li>
+<li>Kayıtların adı. Bir çıkartma kaydının adı tamamen rastgele bir kimliktir ve hiçbir şey sızdırmaz. Spanwise'ın 2.0'dan önceki sürümlerinin yazdığı alışkanlık kayıtları iCloud'unuzda duruyorsa, onların adı rastgele bir kimlikle birlikte bir zaman damgası taşır: bir kaydın var olduğu ve kabaca ne zaman düzenlendiği görülebilir, içeriği görülemez.</li>
+<li>Kayıtların türü ve onları tutan bölgenin adı. Bölge adı, "Tümünü sıfırla"nın kaç kez kullanıldığını sayan bir numara taşıyabilir. Kaç kayıt olduğu ve ne büyüklükte oldukları da görülebilir.</li>
 <li>iCloud'un kendi yükleme zaman damgaları. CloudKit kullanan her uygulamada vardır.</li>
 </ul>
 
 <h2>Satın almalar</h2>
-<p>1.1 sürümünden itibaren Spanwise ücretsizdir. İçinde satılan tek şey Spanwise Pro'dur: bir
-kez alınır, beş sahne ekler. Ödeme tamamen Apple üzerinden yapılır. Kart bilgilerinizi görmeyiz, saklamayız,
-bize hiç ulaşmaz.</p>
-<p>Hangi sahneleri göstereceğini bilmek için uygulama, cihazınızda, App Store'a iki şey
-sorar: bu Apple hesabında Spanwise Pro var mı, ve uygulama ilk kez hangi sürümde indirildi
-(uygulamayı ücretliyken almış olanlar Pro'yu korur). Cevap cihazınızda kalır — widget'lar
-okuyabilsin diye orada tutulur — ve bize gönderilmez; gönderilecek bir sunucumuz yok.</p>
-<p>1.0 sürümü paralı bir uygulamaydı, içinde satın alma yoktu ve App Store'a bunların
-hiçbirini sormazdı.</p>
+
+<p>Spanwise'ı indirmek ücretsizdir. İçine yazmak Spanwise Plus ister: aylık ya da yıllık bir abonelik, ücretsiz bir deneme süresiyle başlar. Ödeme tamamen Apple üzerinden yapılır. Kart bilgilerinizi görmeyiz, saklamayız, bize hiç ulaşmaz.</p>
+
+<p>Alış, geri yükleme ve aboneliğinizin durumu <strong>RevenueCat</strong> (RevenueCat, Inc.) üzerinden yürür. Spanwise her açıldığında, bir şey aldığınızda ya da geri yüklediğinizde RevenueCat'e aboneliğinizi sorar. Uygulama ona App Store'daki satın alma kayıtlarınızı ve uygulamanın sizin için ürettiği rastgele, anonim bir kimliği iletir; RevenueCat'in kiti her istekte bunlara App Store ülkenizi ve dil ayarlarınızı, cihazın modelini ve iOS sürümünü, uygulamanın sürümünü ve cihazın yalnız bu geliştiricinin uygulamalarına özgü tanıtıcısını (Apple'ın "identifierForVendor"u) ekler. Her bağlantıda olduğu gibi IP adresiniz de isteğe eşlik eder. Adınız, e-postanız, sayfalarınız ya da çıkartmalarınız gitmez.</p>
+
+<p>RevenueCat bu kaydı aboneliğinizin sürüp sürmediğini söylemek ve satın almaları doğrulamak için tutar; bize de aboneliklerin sayısını ve gidişatını gösterir, sizi tanıyan bir şey göstermez. RevenueCat bu veriyi yalnız bizim adımıza ve bizim talimatımızla işler: kendi koşulları ve veri işleme sözleşmesiyle bağlı bir veri işleyendir, ve bu veriye bu politikanın anlattığıyla aynı ya da eşit korumayı sağlar. Kayıt RevenueCat'in sunucularında durur; RevenueCat'in gizlilik politikası: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>. Kayıt, sizi izlemek ya da reklam için kullanılmaz.</p>
+
+<p>Kayıt, Spanwise aboneliği RevenueCat'le doğruladığı sürece tutulur. "Tümünü sıfırla" ona dokunmaz: o yalnız cihazınızdakini ve iCloud'unuzdakini siler. Kaydın silinmesini isterseniz <a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a> adresine, Apple'ın Spanwise Plus için size e-postayla gönderdiği makbuzdaki sipariş numarasını (Order ID) yazın. Kaydı onunla bulur, RevenueCat'te sileriz ve 30 gün içinde size haber veririz. Silmek aboneliğinizi iptal etmez; iptal App Store'dan yapılır. Spanwise'ı kullanmaya devam ederseniz bir sonraki soruşta yeni, anonim bir kayıt oluşur.</p>
+
+<p>Ayrıca uygulama, cihazınızda, App Store'a iki şey sorar: bu Apple Hesabında Spanwise Pro var mı, ve uygulama ilk kez hangi sürümde indirildi (uygulamayı ücretliyken almış olanlar ve Spanwise Pro sahipleri abonelik olmadan her şeyi kullanır). Bu iki cevap cihazınızda bulunur. "Satın alımları geri yükle"ye dokunduğunuzda ise bu Apple Hesabının App Store'daki satın alma kayıtları, uygulamanın kendisi ve Spanwise Pro dahil, geri yüklenebilsinler diye RevenueCat'e gider.</p>
+
+<p>Aboneliğinizi bırakırsanız yazdığınız sayfalar sizde kalır: okursunuz ve dışa aktarırsınız.</p>
+
+<h2>Bildirimler</h2>
+
+<p>Spanwise yalnızca siz açarsanız bildirim gönderir. Akşam hatırlatması, günün sayfası hâlâ boşsa gelir. İsterseniz, ücretsiz denemenin bitmesine iki gün kala akşam bir hatırlatma daha gelir. Bildirimler cihazınızda planlanır; bir sunucudan gönderilmez, onlar için cihazınızdan hiçbir şey çıkmaz.</p>
 
 <h2>Verilerinizi silmek</h2>
-<p>Uygulamayı silmek cihazınızdaki verileri siler. iCloud'daki kopyayı silmek için:
-<em>Ayarlar → [adınız] → iCloud → Depolamayı Yönet → Spanwise</em>. Bu, Apple'ın
-kendi arayüzüdür; bizim onaylamamıza gerek yoktur çünkü veri zaten sizindir.</p>
+
+<p>Ayarlar'daki "Tümünü sıfırla" bütün sayfaları bu cihazdan ve iCloud'dan siler. Uygulamayı silmek cihazınızdaki verileri siler. iCloud'daki kopyayı elle silmek için: Ayarlar → [adınız] → iCloud → Depolamayı Yönet → Spanwise. Bu, Apple'ın kendi arayüzüdür; bizim onaylamamıza gerek yoktur çünkü veri zaten sizindir. RevenueCat'teki satın alma kaydını bunların hiçbiri silmez; nasıl sildirileceği yukarıda, "Satın almalar"da.</p>
 
 <h2>Çocuklar</h2>
-<p>Spanwise 4 yaş ve üzeri için derecelendirilmiştir ve hiç kimseden veri
-toplamadığı için çocuklardan da veri toplamaz.</p>
+
+<p>Spanwise çocuklara yönelik değildir. Kimseden kişisel bilgi istemez; bir yere gönderdiği tek şey, yukarıdaki anonim satın alma kaydı, herkes için aynıdır ve kimseyi tanımlamaz.</p>
 
 <h2>Bu politika değişirse</h2>
-<p>Değişirse bu sayfadaki tarih güncellenir. Uygulamanın veri davranışı değişirse
-—örneğin bir gün şifrelenen alanlar değişirse— uygulama içindeki ilgili metin de
-onunla birlikte değişir; ikisi birbirine bağlıdır.</p>
+
+<p>Değişirse bu sayfadaki tarih güncellenir. Uygulamanın veri davranışı değişirse — örneğin bir gün şifrelenen alanlar değişirse — uygulama içindeki ilgili metin de onunla birlikte değişir; ikisi birbirine bağlıdır.</p>
 
 <h2>İletişim</h2>
+
 <p><a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a></p>
 
 <hr>
 
+<div lang="en">
+
 <h1 id="en">Spanwise — Privacy Policy</h1>
-<p class="sub">Last updated: 6 October 2026</p>
 
-<p class="lead">Spanwise collects no data about you. We have no server.</p>
+<p class="sub">Last updated: 22 October 2026</p>
 
-<p>This policy has something to say, because Spanwise can sync — and an app that
-syncs cannot claim "we collect nothing" without saying where things go. In short:
-your data goes to <strong>your own</strong> iCloud account, not to anything of ours.</p>
+<p><em>This policy covers Spanwise 2.0 and later. Versions before 2.0 contain no third-party SDK and send nothing to RevenueCat.</em></p>
+
+<p class="lead">Spanwise collects nothing of what you write. We have no server. The subscription is handled by RevenueCat, and what reaches it is an anonymous record of the purchase.</p>
+
+<p>This policy has something to say, because Spanwise can sync — and an app that syncs cannot claim "we collect nothing" without saying where things go. In short: your data goes to your own iCloud account, not to anything of ours.</p>
 
 <h2>What is not collected</h2>
-<p>The app collects no name, email, location, contacts, photos, health data,
-advertising identifier (IDFA), device identifier, or usage analytics. You are never
-asked to create an account, because there is no account. The app contains no
-third-party SDKs of any kind — no analytics, no advertising, no crash reporting.</p>
+
+<p>The app collects no name, email, location, contacts, photos, health data, advertising identifier (IDFA) or usage analytics. Saving a report as a picture asks only to add that picture to your Photos; the app does not read your photo library. You are never asked to create an account, because there is no account. The app contains one third-party SDK, RevenueCat, and only for the subscription (below, "Purchases"); there is no analytics, advertising or crash-reporting SDK.</p>
 
 <h2>What stays on your device</h2>
-<p>Your habits, your goals, and the days you marked are stored on your device.
-Deleting the app deletes them from it.</p>
+
+<p>Your pages, the stickers you put on them and your usual days are stored on your device. Deleting the app deletes them from it.</p>
 
 <h2>Sync</h2>
-<p>Sync is included in the price. On devices signed in to iCloud, your habit data is written to
-<strong>the private database of your own iCloud account</strong> — through Apple's
-CloudKit, in the area only your devices can reach. If you would rather it did not, you can
-turn off Spanwise's use of iCloud in your iCloud settings; the app keeps working on your
-device.</p>
 
-<p><strong>We have no access to it.</strong> We run no server of our own, and there
-is no system of ours that your data passes through.</p>
+<p>Sync needs no subscription and costs nothing extra. On devices signed in to iCloud, your pages are written to the private database of your own iCloud account — through Apple's CloudKit, in the area only your devices can reach. If you would rather it did not, you can turn off Spanwise's use of iCloud in your iCloud settings; the app keeps working on your device.</p>
 
-<p>Content fields are also <strong>end-to-end encrypted</strong> (CloudKit's
-<code>encryptedValues</code>). Which habit you marked on which day, how often you
-kept it, when you stopped — none of that is readable server-side. Not by Apple either.</p>
+<p>We have no access to it. We run no server of our own, and there is no system of ours that your data passes through.</p>
+
+<p>Content fields are also encrypted on your device before they are sent, and decrypted only on your devices after they come back (CloudKit's <code>encryptedValues</code>). Which sticker you put on which day, how many, for how long, where on the page — all of it is stored encrypted on iCloud's servers. Who holds the keys depends on your iCloud settings: with Advanced Data Protection turned on, only your devices do, not Apple either; without it, Apple keeps them, as it does for most iCloud data.</p>
 
 <h2>What is not encrypted</h2>
-<p>A privacy claim is only trustworthy if it states its edges. CloudKit never
-encrypts three things, and these are properties of the platform rather than choices
-of ours:</p>
+
+<p>A privacy claim is only trustworthy if it states its edges. CloudKit never encrypts a few things, and these are properties of the platform rather than choices of ours:</p>
+
 <ul>
-<li>A record's <em>schema version number</em> — an integer saying which build wrote
-it. It says nothing about you.</li>
-<li>The name of a habit <em>definition</em> record, which carries a random identifier
-and a timestamp. So it can be seen that a habit exists and roughly when it was
-edited — not its name, its goal, or any day it was marked. The names of marking
-records are entirely random and leak nothing.</li>
+<li>A record's schema version number — an integer saying which build wrote it. It says nothing about you.</li>
+<li>A record's name. A sticker record's name is an entirely random identifier and leaks nothing. If habit records written by versions of Spanwise before 2.0 are still in your iCloud, their names carry a random identifier and a timestamp: it can be seen that a record exists and roughly when it was edited, not what it holds.</li>
+<li>A record's type and the name of the zone that holds it. A zone's name can carry a number that counts how many times "Reset all" has been used. How many records there are, and how large, can be seen too.</li>
 <li>iCloud's own upload timestamps. Every app using CloudKit has these.</li>
 </ul>
 
 <h2>Purchases</h2>
-<p>From version 1.1 Spanwise is free. One thing is sold inside it: Spanwise Pro, bought
-once, which adds five scenes. Payment is handled entirely by Apple. We do not see, store, or ever receive your card
-details.</p>
-<p>To know which scenes to show, the app asks the App Store, on your device, two things:
-whether this Apple Account owns Spanwise Pro, and at which version the app was first
-downloaded (people who paid for the app keep Pro). The answer stays on your device — it is
-kept there so the widgets can read it — and is not sent to us; we run no server to send it
-to.</p>
-<p>Version 1.0 was a paid app with no in-app purchases, and asked the App Store neither of
-these.</p>
+
+<p>Spanwise is free to download. Writing in it takes Spanwise Plus: a subscription by the month or by the year, which begins with a free trial. Payment is handled entirely by Apple. We do not see, store, or ever receive your card details.</p>
+
+<p>Buying, restoring and the state of your subscription go through <strong>RevenueCat</strong> (RevenueCat, Inc.). Spanwise asks RevenueCat about your subscription each time it opens, and when you buy or restore. The app passes it your purchase records from the App Store and a random, anonymous identifier the app makes for you; with each request RevenueCat's SDK adds your App Store country and language settings, the device's model and iOS version, the app's version, and the device's identifier for this developer's apps alone (Apple's "identifierForVendor"). As with any connection, your IP address comes with the request. Not your name, your email, your pages or your stickers.</p>
+
+<p>RevenueCat keeps that record to say whether your subscription is running and to verify purchases, and shows us how many subscriptions there are and how they go, nothing that identifies you. RevenueCat processes this data only on our behalf and on our instructions: it is a data processor, bound by its terms and data processing addendum, and it gives this data the same or equal protection as this policy describes. The record is kept on RevenueCat's servers; RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>. It is not used to track you or for advertising.</p>
+
+<p>The record is kept for as long as Spanwise checks subscriptions with RevenueCat. "Reset all" does not touch it: that erases only what is on your device and in your iCloud. To have the record deleted, write to <a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a> with the order ID from the receipt Apple e-mailed you for Spanwise Plus. We find the record by it, delete it at RevenueCat, and tell you within 30 days. Deleting it does not cancel your subscription; that is done in the App Store. If you keep using Spanwise, its next check makes a new anonymous record.</p>
+
+<p>Besides that, the app asks the App Store, on your device, two things: whether this Apple Account owns Spanwise Pro, and at which version the app was first downloaded (people who paid for the app, and owners of Spanwise Pro, use everything without a subscription). Those two answers are worked out on your device. When you tap "Restore purchases", though, this Apple Account's purchase records from the App Store, the app itself and Spanwise Pro included, go to RevenueCat so that they can be restored.</p>
+
+<p>If you stop subscribing, the pages you wrote stay yours: you can read them and export them.</p>
+
+<h2>Notifications</h2>
+
+<p>Spanwise sends notifications only if you switch them on. The evening reminder comes when the day's page is still empty. If you ask for it, one more reminder comes in the evening two days before a free trial ends. Notifications are scheduled on your device; they are not sent from a server, and nothing leaves your device for them.</p>
 
 <h2>Deleting your data</h2>
-<p>Deleting the app removes the data on your device. To remove the iCloud copy:
-<em>Settings → [your name] → iCloud → Manage Storage → Spanwise</em>. That is Apple's
-own interface; it needs no approval from us, because the data is already yours.</p>
+
+<p>"Reset all" in Settings erases every page from this device and from iCloud. Deleting the app removes the data on your device. To remove the iCloud copy by hand: Settings → [your name] → iCloud → Manage Storage → Spanwise. That is Apple's own interface; it needs no approval from us, because the data is already yours. Neither erases the purchase record at RevenueCat; how to have it deleted is under "Purchases" above.</p>
 
 <h2>Children</h2>
-<p>Spanwise is rated 4+ and, since it collects data from nobody, collects none from
-children either.</p>
+
+<p>Spanwise is not directed at children. It asks no one for personal information; the one thing it sends anywhere, the anonymous purchase record above, is the same for everyone and identifies no one.</p>
 
 <h2>If this policy changes</h2>
-<p>The date on this page will change with it. If the app's data behaviour changes —
-if one day the encrypted fields differ, say — the corresponding text inside the app
-changes with it; the two are tied together.</p>
+
+<p>The date on this page will change with it. If the app's data behaviour changes — if one day the encrypted fields differ, say — the corresponding text inside the app changes with it; the two are tied together.</p>
 
 <h2>Contact</h2>
+
 <p><a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a></p>
+
+</div>
 
 </body>
 </html>
