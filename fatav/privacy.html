@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatav — Gizlilik Politikası</title>
+<style>
+  :root{ --night:#130C16; --glow:#2b1d22; --gold:#F2D89C; --muted:#C4A878; --text:#EFE6D6; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:radial-gradient(120% 60% at 50% 0%, var(--glow), var(--night) 70%); color:var(--text);
+        font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; min-height:100vh; }
+  .wrap{ max-width:720px; margin:0 auto; padding:40px 22px 80px; }
+  header{ text-align:center; margin-bottom:14px; }
+  h1{ font-family:Georgia,"Times New Roman",serif; font-style:italic; font-weight:600; font-size:32px; margin:14px 0 2px; color:var(--gold); }
+  h2{ font-family:Georgia,serif; font-weight:600; font-size:20px; color:var(--gold); margin:34px 0 8px; }
+  .sub{ color:var(--muted); font-family:Georgia,serif; font-style:italic; font-size:15px; }
+  .date{ color:var(--muted); font-size:13px; margin-top:6px; }
+  p,li{ color:var(--text); }
+  a{ color:var(--gold); }
+  strong{ color:#fff7e6; }
+  .lead{ background:rgba(242,216,156,.08); border:1px solid rgba(242,216,156,.22); border-radius:14px; padding:16px 18px; margin:18px 0 4px; }
+  .toggle{ display:flex; gap:8px; justify-content:center; margin:20px 0 6px; }
+  .toggle button{ background:transparent; border:1px solid rgba(242,216,156,.4); color:var(--muted); padding:7px 16px;
+    border-radius:999px; cursor:pointer; font-size:14px; }
+  .toggle button.on{ background:var(--gold); color:var(--night); border-color:var(--gold); font-weight:600; }
+  footer{ text-align:center; color:var(--muted); font-size:13px; margin-top:44px; }
+  .hide{ display:none; }
+  nav{ text-align:center; margin-top:8px; }
+  nav a{ font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg viewBox="0 0 100 100" width="64" height="64" aria-hidden="true">
+      <circle cx="50" cy="50" r="40" fill="#F2D89C"/>
+      <g fill="#130C16">
+        <ellipse cx="54" cy="64" rx="17" ry="14"/>
+        <circle cx="45" cy="46" r="11"/>
+        <ellipse cx="40" cy="30" rx="4" ry="12" transform="rotate(-12 40 30)"/>
+        <ellipse cx="49" cy="29" rx="4" ry="12" transform="rotate(6 49 29)"/>
+      </g>
+    </svg>
+    <h1>Fatav</h1>
+    <div class="sub" id="hdr">Gizlilik Politikası</div>
+    <div class="date" id="date">Yürürlük tarihi: 23 Ekim 2026</div>
+  </header>
+
+  <div class="toggle">
+    <button id="btnTR" class="on" onclick="setLang('tr')">Türkçe</button>
+    <button id="btnEN" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ================= TR ================= -->
+  <section id="tr">
+    <div class="lead"><strong>Kısaca:</strong> Fatav tamamen telefonunda çalışır. Hesap, sunucu, analitik ve reklam yok. Kişisel veri toplamıyor, hiçbir yere göndermiyor ve seni takip etmiyoruz.</div>
+
+    <h2>Telefonunda saklananlar</h2>
+    <p>Çektiğin kağıtlar, Kağıtlarım’a koyduğun kağıtlar ve “Birine çek” için yazdığın isimler yalnızca telefonunda, uygulamanın kendi alanında saklanır. Bunları biz göremeyiz. Uygulamayı silersen hepsi silinir.</p>
+
+    <h2>Paylaşım</h2>
+    <p>“Gönder”e dokunduğunda kağıt bir görsele dönüşür ve iOS paylaşım menüsü açılır. Görselin nereye gideceğini <strong>sen</strong> seçersin (ör. Mesajlar, WhatsApp); oradan sonrası o uygulamanın koşullarına tabidir. Paylaşılan görseli biz görmeyiz.</p>
+
+    <h2>Fotoğraflar ve kamera</h2>
+    <p>Fatav fotoğraflarını okumaz ve kameraya erişmez. Paylaşım menüsünde “Görüntüyü Kaydet”i seçersen iOS, kağıdın görselini Fotoğraflar’a eklemek için senden izin ister. Bu izin yalnızca eklemek içindir.</p>
+
+    <h2>Test sürümü (TestFlight)</h2>
+    <p>Test sürümü, kullanım sayılarını (hangi günler açıldığı, kaç kağıt çekilip açıldığı, kaçının saklandığı, paylaşım menüsünün kaç kez açıldığı ve hangi uygulamaya gönderildiği) yalnızca telefonunda, Ayarlar → Test raporu’nda tutar. Biz bu bilgiyi görmeyiz; sen kopyalayıp göndermedikçe telefonundan çıkmaz.</p>
+    <p>TestFlight ile test ederken Apple; yükleme, oturum ve çökme bilgileri ile senin göndermeyi seçtiğin geri bildirimleri geliştiriciyle paylaşabilir. Bu, Apple’ın TestFlight koşullarına tabidir.</p>
+
+    <h2>Satın almalar</h2>
+    <p>Bu sürümde uygulama içi satın alma yoktur.</p>
+
+    <h2>Takip ve reklam</h2>
+    <p>Yok. Analitik yok, reklam yok, üçüncü taraf kitaplık yok, reklam kimliği (IDFA) kullanılmıyor.</p>
+
+    <h2>Çocuklar</h2>
+    <p>Fatav bir eğlencedir; kesin bilgi, öğüt ya da fal değildir. Kişisel veri toplamadığı için çocuklara özgü bir veri işleme yoktur.</p>
+
+    <h2>Değişiklikler</h2>
+    <p>Bu politikayı zaman zaman güncelleyebiliriz; en güncel hâli bu sayfada, yukarıdaki yürürlük tarihiyle yayımlanır.</p>
+
+    <h2>İletişim</h2>
+    <p>Soruların için: <a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a></p>
+    <nav><a href="./">Destek →</a></nav>
+  </section>
+
+  <!-- ================= EN ================= -->
+  <section id="en" class="hide">
+    <div class="lead"><strong>In short:</strong> Fatav runs entirely on your phone. No account, no server, no analytics, no ads. We collect no personal data, send nothing anywhere, and do not track you.</div>
+
+    <h2>Stored on your phone</h2>
+    <p>The slips you draw, the slips you keep in Kağıtlarım and the names you type for “Birine çek” (draw for someone) are stored only on your phone, inside the app’s own storage. We cannot see them. Deleting the app deletes all of it.</p>
+
+    <h2>Sharing</h2>
+    <p>When you tap “Gönder” (send), the slip becomes an image and the iOS share sheet opens. <strong>You</strong> choose where the image goes (e.g. Messages, WhatsApp); from there that app’s terms apply. We never see the shared image.</p>
+
+    <h2>Photos and camera</h2>
+    <p>Fatav does not read your photos and does not use the camera. If you choose “Save Image” in the share sheet, iOS asks your permission to add the slip’s image to Photos. That permission is add-only.</p>
+
+    <h2>Test version (TestFlight)</h2>
+    <p>The test version keeps usage counts (which days the app was opened, how many slips were drawn, opened and kept, how many times the share sheet was opened and which app the slip was sent to) only on your phone, under Settings → Test raporu. We never see this; it does not leave your phone unless you copy and send it.</p>
+    <p>While you test with TestFlight, Apple may share install, session and crash information, and any feedback you choose to send, with the developer. This is governed by Apple’s TestFlight terms.</p>
+
+    <h2>Purchases</h2>
+    <p>This version has no in-app purchases.</p>
+
+    <h2>Tracking &amp; ads</h2>
+    <p>None. No analytics, no ads, no third-party libraries, no advertising identifier (IDFA).</p>
+
+    <h2>Children</h2>
+    <p>Fatav is entertainment, not certain information, advice or fortune-telling. Because it collects no personal data, there is no special processing of children’s data.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy from time to time; the current version is published on this page with the effective date above.</p>
+
+    <h2>Contact</h2>
+    <p>Questions: <a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a></p>
+    <nav><a href="./">Support →</a></nav>
+  </section>
+
+  <footer>Fatav · Magnus Creative</footer>
+</div>
+
+<script>
+  function setLang(l){
+    document.getElementById('tr').classList.toggle('hide', l!=='tr');
+    document.getElementById('en').classList.toggle('hide', l!=='en');
+    document.getElementById('btnTR').classList.toggle('on', l==='tr');
+    document.getElementById('btnEN').classList.toggle('on', l==='en');
+    document.documentElement.lang = l;
+    document.getElementById('hdr').textContent = l==='tr' ? 'Gizlilik Politikası' : 'Privacy Policy';
+    document.getElementById('date').textContent = l==='tr' ? 'Yürürlük tarihi: 23 Ekim 2026' : 'Effective date: October 23, 2026';
+  }
+</script>
+</body>
+</html>

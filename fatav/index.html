@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatav — Destek</title>
+<style>
+  :root{ --night:#130C16; --glow:#2b1d22; --gold:#F2D89C; --muted:#C4A878; --text:#EFE6D6; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:radial-gradient(120% 60% at 50% 0%, var(--glow), var(--night) 70%); color:var(--text);
+        font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; min-height:100vh; }
+  .wrap{ max-width:720px; margin:0 auto; padding:40px 22px 80px; }
+  header{ text-align:center; margin-bottom:14px; }
+  h1{ font-family:Georgia,"Times New Roman",serif; font-style:italic; font-weight:600; font-size:32px; margin:14px 0 2px; color:var(--gold); }
+  h2{ font-family:Georgia,serif; font-weight:600; font-size:20px; color:var(--gold); margin:34px 0 8px; }
+  .sub{ color:var(--muted); font-family:Georgia,serif; font-style:italic; font-size:15px; }
+  p,li{ color:var(--text); }
+  a{ color:var(--gold); }
+  strong{ color:#fff7e6; }
+  .lead{ background:rgba(242,216,156,.08); border:1px solid rgba(242,216,156,.22); border-radius:14px; padding:16px 18px; margin:18px 0 4px; }
+  ol.steps{ padding-left:0; list-style:none; }
+  ol.steps li{ margin:8px 0; }
+  .q{ font-weight:600; color:var(--gold); margin:22px 0 2px; }
+  .toggle{ display:flex; gap:8px; justify-content:center; margin:20px 0 6px; }
+  .toggle button{ background:transparent; border:1px solid rgba(242,216,156,.4); color:var(--muted); padding:7px 16px; border-radius:999px; cursor:pointer; font-size:14px; }
+  .toggle button.on{ background:var(--gold); color:var(--night); border-color:var(--gold); font-weight:600; }
+  .contact{ text-align:center; background:rgba(242,216,156,.08); border:1px solid rgba(242,216,156,.22); border-radius:14px; padding:18px; margin-top:26px; }
+  .contact a{ font-size:18px; }
+  footer{ text-align:center; color:var(--muted); font-size:13px; margin-top:44px; }
+  .hide{ display:none; }
+  nav{ text-align:center; margin-top:8px; }
+  nav a{ font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg viewBox="0 0 100 100" width="64" height="64" aria-hidden="true">
+      <circle cx="50" cy="50" r="40" fill="#F2D89C"/>
+      <g fill="#130C16">
+        <ellipse cx="54" cy="64" rx="17" ry="14"/>
+        <circle cx="45" cy="46" r="11"/>
+        <ellipse cx="40" cy="30" rx="4" ry="12" transform="rotate(-12 40 30)"/>
+        <ellipse cx="49" cy="29" rx="4" ry="12" transform="rotate(6 49 29)"/>
+      </g>
+    </svg>
+    <h1>Fatav</h1>
+    <div class="sub" id="hdr">cep niyetçisi · destek</div>
+  </header>
+
+  <div class="toggle">
+    <button id="btnTR" class="on" onclick="setLang('tr')">Türkçe</button>
+    <button id="btnEN" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ================= TR ================= -->
+  <section id="tr">
+    <div class="lead">Fatav cebindeki niyetçidir. Niyetini içinden tutarsın, tavşan çekmeceden senin için dört dizelik bir mâni kağıdı çeker. Bir eğlencedir; kesin bilgi, öğüt ya da fal değildir.</div>
+
+    <h2>Nasıl çalışır</h2>
+    <ol class="steps">
+      <li><strong>1.</strong> “Niyetini tut” düğmesine basılı tut, niyetini içinden geçir, bırak.</li>
+      <li><strong>2.</strong> Tavşan kağıtları koklar ve senin için birini çeker.</li>
+      <li><strong>3.</strong> Kağıda iki kez dokunarak aç. Beğendiysen “Sakla”, birine göstermek için “Gönder”.</li>
+    </ol>
+
+    <h2>Sık sorulanlar</h2>
+    <p class="q">Neden günde bir kağıt?</p>
+    <p>Kendin için günde bir kağıt çekilir; yenisi ertesi gün, gece yarısından sonra gelir. Bugünün kağıdını “Bugünün kağıdı” ile yeniden açabilirsin.</p>
+    <p class="q">Birine nasıl kağıt çekerim?</p>
+    <p>“Birine çek”e dokun, istersen ismini yaz. Uyan kağıtlarda isim üçüncü dizeye girer. Birine çekmenin sınırı yoktur.</p>
+    <p class="q">Kağıtlarım nedir?</p>
+    <p>Sakladığın kağıtlar orada durur. Oradan yeniden açıp gönderebilirsin.</p>
+    <p class="q">Bu bir fal mı?</p>
+    <p>Hayır. Sokak niyetçilerinin kağıtları gibi, eğlence için yazılmış mânilerdir; geleceği söylemez.</p>
+    <p class="q">Verilerim nerede?</p>
+    <p>Yalnız telefonunda. Hesap, sunucu, analitik ve reklam yok. Ayrıntı: <a href="privacy.html">Gizlilik</a>.</p>
+    <p class="q">Test sürümünde raporu nasıl gönderirim?</p>
+    <p>Ayarlar → Test raporu → Kopyala. Sonra metni, sana Fatav’ı gönderen kişiye ilet. Rapor sen kopyalamadıkça telefonundan çıkmaz.</p>
+    <p class="q">Verilerimi nasıl silerim?</p>
+    <p>Uygulamayı silmek bütün kağıtlarını ve test raporunu siler.</p>
+
+    <div class="contact">
+      <div>Her şey için yaz:</div>
+      <a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a>
+    </div>
+    <nav><a href="privacy.html">Gizlilik Politikası →</a></nav>
+  </section>
+
+  <!-- ================= EN ================= -->
+  <section id="en" class="hide">
+    <div class="lead">Fatav is a pocket fortune-slip stall. Make a wish silently, and the rabbit pulls a four-line folk verse (<em>mâni</em>) for you from the drawer, like the street <em>niyetçi</em> stalls in Turkey. It is entertainment, not certain information, advice or fortune-telling.</div>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>1.</strong> Press and hold “Niyetini tut” (make a wish), think of your wish, release.</li>
+      <li><strong>2.</strong> The rabbit sniffs the slips and pulls one for you.</li>
+      <li><strong>3.</strong> Tap the slip twice to unfold it. Keep it with “Sakla”, show someone with “Gönder”.</li>
+    </ol>
+
+    <h2>FAQ</h2>
+    <p class="q">Why one slip a day?</p>
+    <p>You draw one slip for yourself each day; a new one comes after midnight. Reopen today’s slip with “Bugünün kağıdı”.</p>
+    <p class="q">How do I draw for someone?</p>
+    <p>Tap “Birine çek” and type a name if you like. On slips that fit, the name goes into the third line. Drawing for others has no limit.</p>
+    <p class="q">What is Kağıtlarım?</p>
+    <p>The slips you keep. You can reopen and send them from there.</p>
+    <p class="q">Is this fortune-telling?</p>
+    <p>No. Like the slips of street <em>niyetçi</em> stalls, these are verses written for fun; they do not predict the future.</p>
+    <p class="q">Where is my data?</p>
+    <p>Only on your phone. No account, no server, no analytics, no ads. Details: <a href="privacy.html">Privacy</a>.</p>
+    <p class="q">How do I send the test report (test version)?</p>
+    <p>Settings → Test raporu → Kopyala, then send the text to whoever invited you to test Fatav. The report never leaves your phone unless you copy it.</p>
+    <p class="q">How do I delete my data?</p>
+    <p>Deleting the app deletes all your slips and the test report.</p>
+
+    <div class="contact">
+      <div>Reach us anytime:</div>
+      <a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a>
+    </div>
+    <nav><a href="privacy.html">Privacy Policy →</a></nav>
+  </section>
+
+  <footer>Fatav · Magnus Creative</footer>
+</div>
+
+<script>
+  function setLang(l){
+    document.getElementById('tr').classList.toggle('hide', l!=='tr');
+    document.getElementById('en').classList.toggle('hide', l!=='en');
+    document.getElementById('btnTR').classList.toggle('on', l==='tr');
+    document.getElementById('btnEN').classList.toggle('on', l==='en');
+    document.documentElement.lang = l;
+    document.getElementById('hdr').textContent = l==='tr' ? 'cep niyetçisi · destek' : 'pocket fortune slips · support';
+  }
+</script>
+</body>
+</html>
