@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Herz: Hakediş — Gizlilik Politikası / Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    color: #1c1c1e;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6ea; background: #111114; }
+    a { color: #6ca8ff; }
+    hr { border-color: #2c2c30; }
+    .lang-note { background: #1b1b1f; border-color: #2c2c30; }
+  }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.25rem; border-bottom: 1px solid #e3e3e6; padding-bottom: .3rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+  a { color: #0a62ff; }
+  .meta { color: #6b6b70; font-size: .92rem; margin-top: 0; }
+  .lang-note {
+    font-size: .92rem; background: #f5f5f7; border: 1px solid #e3e3e6;
+    border-radius: 10px; padding: .75rem 1rem; margin: 1.25rem 0;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #d9d9de; padding: .5rem .65rem; text-align: left; vertical-align: top; }
+  th { background: rgba(127,127,127,.08); }
+  ul { padding-left: 1.2rem; }
+  hr { margin: 3rem 0; border: none; border-top: 2px solid #e3e3e6; }
+  code { font-size: .9em; }
+  .placeholder { background: rgba(255,196,0,.22); padding: 0 .2em; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<!-- Source of truth for https://paxcreator.com/apps/herz-hakedis/privacy.html (served from marbas-dev.github.io/herz-hakedis/,
+     the copy in that repository is what is published; publishing is the owner's push).
+     DRAFT for 2.0 (2026-11-25), written from the code: ios/Sources, core/HakedisCore, worker/src. The owner reviews,
+     fills the [OWNER: …] items and publishes it; publishing is an official statement. Facts it rests on:
+     SummaryInput.build (what is sent; descriptions ≤ 110 chars; up to 12 largest and 6 over-contract items),
+     TextSafety (places, authorities, file-name words, phone / national ID / IBAN removed), ReportLibrary
+     (backup-excluded, complete file protection), worker/src/quota.ts (HMAC key, one row per ISO week, KEEP_WEEKS = 8),
+     worker/src/index.ts (IP only as an HMAC'd limiter key; JSON log lines without content or identifiers). -->
+
+<section id="tr" lang="tr">
+<h1>Herz: Hakediş — Gizlilik Politikası</h1>
+<p class="meta">Yürürlük tarihi: <span class="placeholder">[OWNER: yayın günü]</span> · Sürüm 2.0</p>
+<p class="lang-note">Bu sayfa iki dildedir. Önce Türkçe, ardından İngilizce metin yer alır. <a href="#en">Jump to the English version ↓</a></p>
+
+<p>Herz: Hakediş (“Uygulama”), açtığınız inşaat hakediş Excel dosyalarını (.xlsx) iPhone'unuzda okuyan, hesaplarını
+kontrol eden ve sonucu özetleyen tek kullanıcılı bir belge aracıdır. 2.0 sürümünden itibaren hesap, giriş ve sunucuda
+dosya saklama yoktur. Bu metin 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) ve AB Genel Veri Koruma Tüzüğü
+(“GDPR”) kapsamında verilerin nasıl işlendiğini açıklar.</p>
+
+<h2>1. Veri sorumlusu</h2>
+<p><strong>Veri sorumlusu:</strong> Aytaç Yılmaz<br><strong>İletişim / başvuru e-postası:</strong> <a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a> · <a href="index.html#tr">Destek</a></p>
+
+<h2>2. Cihazınızda kalanlar</h2>
+<ul>
+<li><strong>Açtığınız hakediş dosyaları.</strong> Uygulama dosyanın bir kopyasını yalnız iPhone'unuzda, kendi alanında
+saklar. Bu kopya iCloud ve bilgisayar yedeklerine dahil edilmez ve cihaz kilitliyken okunamayacak şekilde korunur.
+Okuma, kontroller ve özet tamamen cihazda yapılır; dosya hiçbir sunucuya yüklenmez.</li>
+<li><strong>Yapay zekâ yorumları.</strong> Aldığınız bir yorum, ilgili dosyanın yanında yine yalnız cihazınızda saklanır.</li>
+<li><strong>Silme.</strong> Bir dosyayı listede kaydırarak, hepsini Ayarlar → Bütün Dosyaları Sil ile silebilirsiniz;
+uygulamayı silmek de bütün kopyaları siler. Bu verilere bizim erişimimiz yoktur.</li>
+</ul>
+
+<h2>3. Yapay zekâ yorumu (isteğe bağlı, Herz Pro)</h2>
+<p>Yalnız Herz Pro aboneyseniz ve bir hakediş için <strong>Yorumu yaz</strong>'a dokunursanız uygulama Herz sunucusuna
+şunları gönderir:</p>
+<ul>
+<li>hakedişin parasal özeti: hakediş numarası, bu dönem ve kümülatif tutarlar, KDV, kesintiler ve oranları, ödenecek
+tutar, önceki hakedişlerin tutarları;</li>
+<li>kontrol sonuçları: kaç kontrol yapıldığı, tutmayanların tutarları ve poz tablolarıyla özet sayfasının mutabakatı;</li>
+<li>en büyük kalemlerin ve sözleşme miktarını aşan kalemlerin açıklaması, birimi, miktarları ve bedeli. Açıklamalar gönderilmeden
+önce cihazda temizlenir: yer ve idare adları, dosya adındaki kelimeler ve telefon, T.C. kimlik ve IBAN numaraları
+çıkarılır; açıklama en çok 110 karakterle sınırlanır.</li>
+</ul>
+<p><strong>Gönderilmeyenler:</strong> dosyanın kendisi, proje künyesi (idare, yüklenici, imzacılar), poz numaraları ve
+dosya adı.</p>
+<p>Sunucu, isteğin geçerli bir Herz Pro aboneliğinden geldiğini Apple'ın imzaladığı abonelik işlemiyle doğrular, veriyi
+yorumu yazması için Anthropic'in Claude hizmetine gönderir ve gelen metni uygulamaya döndürür. Sunucu bu veriyi ve
+metni saklamaz. Yorumdaki her tutarı uygulama dosyanızdan doldurur; yorum, cihazda hesaplanan kontrollerin altında ayrı
+ve “Yapay zekâ yorumu” başlığıyla gösterilir.</p>
+<p><strong>Hukuki sebep:</strong> abonelik sözleşmesinin ifası (KVKK m.5/2-c) ve her istekte, ne gönderileceği düğmenin
+hemen üstünde yazılıyken dokunmanızla verdiğiniz açık rıza (KVKK m.5/1).
+<span class="placeholder">[OWNER: hukuki sebebi doğrulayın]</span></p>
+
+<h2>4. Sunucuda tutulanlar</h2>
+<table>
+<tr><th>Veri</th><th>Ne için</th><th>Ne kadar</th></tr>
+<tr><td><strong>Haftalık kullanım sayacı</strong> — abonelik işlem kimliğinizin anahtarlı, geri döndürülemez özeti (HMAC)
+altında yalnız hafta ve yorum sayısı. Adınız, e-postanız, cihaz kimliğiniz ya da içerik tutulmaz.</td>
+<td>Haftalık yorum hakkını uygulamak</td><td>Son 8 hafta; sonra silinir</td></tr>
+<tr><td><strong>Kötüye kullanım sınırı</strong> — istek adresinizin (IP) anahtarlı özeti.</td>
+<td>Çok sık isteği engellemek</td><td>Kısa süreli bir sınırlayıcıda; saklanmaz</td></tr>
+<tr><td><strong>Teknik kayıtlar</strong> — olay türü, dil, işlem ve kelime sayıları, hata kodları. İçerik, tutar, IP ya da
+kimlik içermez.</td><td>Hizmetin çalıştığını izlemek</td><td>Cloudflare'in kayıt saklama süresince</td></tr>
+</table>
+
+<h2>5. Üçüncü taraflar ve yurt dışına aktarım</h2>
+<ul>
+<li><strong>Apple</strong> — App Store, uygulama içi satın alma ve abonelik. Ödeme bilgileriniz bize ulaşmaz.</li>
+<li><strong>Cloudflare</strong> — Herz sunucusunu (Cloudflare Workers) barındırır; istekler Cloudflare'in küresel ağında
+işlenir.</li>
+<li><strong>Anthropic</strong> — yorumu yazan Claude modeli. Anthropic'in bu veriyi nasıl işlediği Anthropic'in kendi
+koşullarına tabidir.</li>
+</ul>
+<p>Yorum isteği bu nedenle yurt dışında işlenir. <span class="placeholder">[OWNER: KVKK m.9 kapsamında aktarımın dayanağını
+doğrulayın]</span></p>
+<p>Uygulamada reklam, analiz ya da izleme aracı ve üçüncü taraf yazılım geliştirme kiti yoktur; reklam kimliği (IDFA)
+kullanılmaz.</p>
+
+<h2>6. Haklarınız</h2>
+<p>KVKK m.11 ve GDPR uyarınca verilerinizin işlenip işlenmediğini öğrenme, bilgi isteme, düzeltilmesini ya da
+silinmesini isteme ve işlemeye itiraz etme haklarına sahipsiniz. Cihazınızdaki veriler sizin denetiminizdedir (madde 2).
+Sunucudaki tek kayıt haftalık sayaçtır; kimliğinizle eşleştirilemediği için silinmesini isterseniz abonelik işlem
+bilginizi paylaşmanız gerekir, aksi hâlde 8 hafta sonunda kendiliğinden silinir. Talepleriniz için:
+<a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a>.</p>
+
+<h2>7. Abonelik</h2>
+<p>Herz Pro haftalık, otomatik yenilenen bir aboneliktir; ödemeyi Apple alır. Aboneliği iPhone Ayarları → Apple Hesabı →
+Abonelikler'den ya da uygulamada Ayarlar → Aboneliği Yönet'ten yönetebilir veya iptal edebilirsiniz. İadeler Apple'ın
+politikasına tabidir. Okuma, kontroller ve özet aboneliksiz de ücretsizdir.</p>
+
+<h2>8. Güvenlik</h2>
+<p>Yorum istekleri yalnız HTTPS (TLS) ile gönderilir. Cihazdaki dosyalar iOS veri korumasıyla saklanır. Sunucu kayıtları
+dosya içeriğini, tutarları ya da kimliği kaydetmez.</p>
+
+<h2>9. Çocukların gizliliği</h2>
+<p>Uygulama profesyonel bir araçtır ve çocuklara yönelik değildir.</p>
+
+<h2>10. Değişiklikler</h2>
+<p>Bu politikayı güncelleyebiliriz. Önemli bir değişiklikte yürürlük tarihini yenileriz; güncel sürüm her zaman bu
+adreste yayınlanır.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Herz: Hakediş — Privacy Policy</h1>
+<p class="meta">Effective date: <span class="placeholder">[OWNER: publication date]</span> · Version 2.0</p>
+<p class="lang-note">This page is bilingual: Turkish first, above; English below. <a href="#tr">Türkçe sürüme dön ↑</a></p>
+
+<p>Herz: Hakediş (the “App”) is a single-user document tool that reads the construction progress-payment (hakediş) Excel
+workbooks (.xlsx) you open on your iPhone, checks their arithmetic and summarizes them. Since version 2.0 there is no
+account, no sign-in and no file storage on a server. This policy explains how data is handled under Turkey's Personal
+Data Protection Law (“KVKK”) and the EU General Data Protection Regulation (“GDPR”).</p>
+
+<h2>1. Data controller</h2>
+<p><strong>Controller:</strong> Aytaç Yılmaz<br><strong>Contact / requests:</strong> <a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a> · <a href="index.html">Support</a></p>
+
+<h2>2. What stays on your iPhone</h2>
+<ul>
+<li><strong>The workbooks you open.</strong> The App keeps a copy only on your iPhone, in its own storage. The copy is
+excluded from iCloud and computer backups and is protected so that it cannot be read while the device is locked.
+Reading, checks and the summary happen entirely on the device; the file is never uploaded.</li>
+<li><strong>AI commentaries.</strong> A commentary you receive is kept next to its workbook, also only on your device.</li>
+<li><strong>Deletion.</strong> Swipe a workbook in the list, or use Settings → Delete All Workbooks; deleting the App also
+deletes every copy. We have no access to this data.</li>
+</ul>
+
+<h2>3. AI commentary (optional, Herz Pro)</h2>
+<p>Only if you subscribe to Herz Pro and tap <strong>Write the commentary</strong> for a payment does the App send the Herz
+server:</p>
+<ul>
+<li>the payment's financial summary: its number, this period's and the cumulative amounts, VAT, the deductions and their
+rates, the amount payable, and the previous payments' amounts;</li>
+<li>the check results: how many checks ran, the amounts of those that do not hold, and the reconciliation of the line
+items with the summary sheet;</li>
+<li>the description, unit, quantities and amount of the largest items and of the items above their contract quantity.
+Descriptions are cleaned on the device first: place and authority names, words from the file name, and phone, Turkish
+national ID and IBAN numbers are removed, and each description is limited to 110 characters.</li>
+</ul>
+<p><strong>Not sent:</strong> the file itself, the project details (administration, contractor, signatories), item numbers
+and the file name.</p>
+<p>The server checks with the Apple-signed subscription transaction that the request comes from a valid Herz Pro
+subscription, sends the data to Anthropic's Claude service to write the commentary, and returns the text to the App. The
+server does not store the data or the text. The App fills in every amount in the commentary from your file; the
+commentary is shown below the checks computed on the device, apart from them and titled “AI commentary”.</p>
+<p><strong>Legal basis:</strong> performance of the subscription contract (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c)) and your
+explicit consent, given each time by the tap while what is sent is written just above the button (KVKK Art. 5(1)).
+<span class="placeholder">[OWNER: confirm the legal basis]</span></p>
+
+<h2>4. What the server keeps</h2>
+<table>
+<tr><th>Data</th><th>Purpose</th><th>How long</th></tr>
+<tr><td><strong>Weekly usage counter</strong> — only the week and the number of commentaries, under a keyed, one-way hash
+(HMAC) of your subscription's transaction ID. No name, email, device ID or content.</td>
+<td>To apply the weekly allowance</td><td>The last 8 weeks; then deleted</td></tr>
+<tr><td><strong>Abuse limit</strong> — a keyed hash of the request's IP address.</td>
+<td>To stop excessive requests</td><td>In a short-lived limiter; not stored</td></tr>
+<tr><td><strong>Technical logs</strong> — event type, language, attempt and token counts, error codes. No content, amounts,
+IP addresses or identifiers.</td><td>To see that the service works</td><td>For Cloudflare's log retention period</td></tr>
+</table>
+
+<h2>5. Third parties and transfers abroad</h2>
+<ul>
+<li><strong>Apple</strong> — the App Store, in-app purchase and the subscription. Your payment details never reach us.</li>
+<li><strong>Cloudflare</strong> — hosts the Herz server (Cloudflare Workers); requests are handled on Cloudflare's global
+network.</li>
+<li><strong>Anthropic</strong> — the Claude model that writes the commentary. How Anthropic processes this data is subject
+to Anthropic's own terms.</li>
+</ul>
+<p>A commentary request is therefore processed outside Turkey and the EU. <span class="placeholder">[OWNER: confirm the
+basis for the transfer under KVKK Art. 9 and GDPR Chapter V]</span></p>
+<p>The App has no advertising, analytics or tracking tools and no third-party SDKs, and does not use the advertising
+identifier (IDFA).</p>
+
+<h2>6. Your rights</h2>
+<p>Under KVKK Art. 11 and the GDPR you may ask whether your data is processed, request information, correction or
+deletion, and object to processing. The data on your device is under your control (section 2). The only record on the
+server is the weekly counter; since it cannot be matched to you, deleting it on request needs your subscription's
+transaction details — otherwise it deletes itself after 8 weeks. Requests:
+<a href="mailto:aytacmetu@gmail.com">aytacmetu@gmail.com</a>.</p>
+
+<h2>7. Subscription</h2>
+<p>Herz Pro is a weekly, auto-renewable subscription; Apple takes the payment. Manage or cancel it in iPhone Settings →
+Apple Account → Subscriptions, or in the App under Settings → Manage Subscription. Refunds follow Apple's policy.
+Reading, checks and the summary stay free without a subscription.</p>
+
+<h2>8. Security</h2>
+<p>Commentary requests are sent over HTTPS (TLS) only. Files on the device are stored with iOS data protection. Server logs
+do not record file content, amounts or identities.</p>
+
+<h2>9. Children's privacy</h2>
+<p>The App is a professional tool and is not directed at children.</p>
+
+<h2>10. Changes</h2>
+<p>We may update this policy. For a significant change we renew the effective date; the current version is always
+published at this address.</p>
+</section>
+
+</body>
+</html>
